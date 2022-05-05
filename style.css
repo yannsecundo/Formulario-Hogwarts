@@ -17,6 +17,7 @@ main,
 #evaluation-form {
     width: 675px;
     flex-direction: column;
+    text-align: center;
 }
 
 .trybewarts-header-logo {
