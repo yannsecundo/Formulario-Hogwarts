@@ -12,15 +12,18 @@
     <img src="images/trybewarts-header-logo.svg" alt="logo" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class="trybewarts-login" >
-      <input type="email" placeholder="Email" name="email">
-      <input type="password" placeholder="Senha" name="senha">
-      <button type="submit">Entrar</button>
+      <input type="email" placeholder="Email" name="email" class="login-email">
+      <input type="password" placeholder="Senha" name="senha" class="login-senha">
+      <button type="submit" onclick="login()">Entrar</button>
     </form>
   </header>
   <main>
     <form action="get" id="evaluation-form">
+      <div>
       <input type="text" name="nome" id="input-name " placeholder="Nome">
       <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+    </div>
+    <div>
       <input type="text" name="email" id="input-email" placeholder="Email">
 
       <select name="casa" id="house">
@@ -29,9 +32,10 @@
         <option value="Corvinode" tyoe="text" id="corvinode-house">Corvinode</option>
         <option value="Pytherina" type="text" id="pytherina-house">Pytherina</option>
       </select>
-      
+    </div>
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo central trybe" id="trybewarts-forms-logo">
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
