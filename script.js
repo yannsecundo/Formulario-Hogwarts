@@ -1,13 +1,10 @@
-const email = document.querySelector('.login-email').value;
-const senha = document.querySelector('.login-senha').value;
+const email = document.querySelector('.login-email');
+const senha = document.querySelector('.login-senha');
 const botao = document.querySelector('#botao');
-
-function login() {
-  if (email === 'tryber@teste.com' && senha === '123456') {
+botao.addEventListener('click', () => {
+  if (email.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
   }
-}
-botao.addEventListener('click', login);
-login();
+});

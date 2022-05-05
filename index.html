@@ -36,9 +36,15 @@
     </div>
     
     <div id="label-family">Qual sua família?</div>
-        <input type="radio" name="family" value="Frontend"> Familia Frontend
-        <input type="radio" name="family" value="Backend"> Familia Backend
-        <input type="radio" name="family" value="FullStack"> Familia FullStack
+        <label for="">Familia Frontend
+          <input type="radio" name="family" value="Frontend">
+        </label>
+        <label>Familia Backend
+          <input type="radio" name="family" value="Backend">
+        </label>
+        <label for="">Familia FullStack
+          <input type="radio" name="family" value="FullStack">
+        </label>
     
     
     <div id="label-content"> Qual conteúdo você está com mais vontade de aprender?</div>
@@ -63,6 +69,10 @@
     <label for="abstract" class="textarea">Deixe seu comentário:</label>
       <textarea id="textarea" maxlength="500" cols="5" rows="5"></textarea>
 
+    <label id="label-infos">Você concorda com o uso das informações acima?
+      <input type="checkbox" id="agreement">
+    </label>
+    <button type="submit" id="submit-btn">Enviar</button>
     </form>
     <img src="images/trybewarts-colored.svg" alt="logo central trybe" id="trybewarts-forms-logo">
   </main>
