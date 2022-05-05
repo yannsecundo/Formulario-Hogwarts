@@ -1,9 +1,9 @@
-let email = document.querySelector('.login-email').value;
-let senha = document.querySelector('.login-senha').value;
+let email = document.querySelector('.login-email');
+let senha = document.querySelector('.login-senha');
 function login() {
-    if (email === "tryber@teste.com" & senha === "123456") {
+    if (email.value === "tryber@teste.com" & senha.value === "123456") {
         alert("Olá, Tryber!")
     } else {
-     alert("Email ou senha inválidos.")   
+        alert("Email ou senha inválidos.")
     }
 }
