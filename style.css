@@ -89,17 +89,13 @@ main {
   align-items: center;
 }
 
-#label-content {
+#label-content1 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#label-content h3 {
-  width: 300px;
-}
-
-#label-family {
+#label-family1 {
   display: flex;
   flex-direction: column;
 
