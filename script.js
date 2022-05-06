@@ -13,10 +13,14 @@ botao.addEventListener('click', () => {
   }
 });
 
-desc.addEventListener('keypress', () => {
-  const tam = desc.value.length + 1;
-  cont.innerHTML = 500 - tam;
-  console.log(tam);
+desc.addEventListener('keyup', () => {
+  const calculo = desc.value.length;
+  if ((desc.value.length) < cont.value) {
+    cont.innerHTML = cont.value + calculo + 1;
+    console.log(cont.value);
+  } else {
+    cont.innerHTML = 500 - calculo;
+  }
 });
 checkboxAgreement.addEventListener('click', () => {
   if (checkboxAgreement.value === true) {
